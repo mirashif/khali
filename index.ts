@@ -1,4 +1,4 @@
-const isEmpty = (data: any): boolean => {
+const khali = (data: any): boolean => {
     if (Array.isArray(data)) return !data.length;
 
     else if (typeof data === 'object' && data !== null) return !Object.keys(data).length;
@@ -6,4 +6,4 @@ const isEmpty = (data: any): boolean => {
     else return !data
 }
 
-export default isEmpty;
+export default khali;
