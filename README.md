@@ -27,5 +27,5 @@ khali(1971);                    // false
 
 # API
 ## khali(value)
-- Returns true if the `value` is empty.
-- Returns false if the `value` is NOT empty.
+- Returns `true` if the `value` is empty.
+- Returns `false` if the `value` is NOT empty.
