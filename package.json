@@ -1,0 +1,16 @@
+{
+  "name": "khali",
+  "version": "1.0.0",
+  "description": "Simply check if your array, object, string, number, etc are empty or not.",
+  "author": "Mir Ashif, Samiul Haque Sohan",
+  "license": "GPL-2.0-only",
+  "prepublish": "tsc",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^4.2.3"
+  }
+}
