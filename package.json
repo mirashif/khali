@@ -2,6 +2,7 @@
   "name": "khali",
   "version": "1.0.0",
   "description": "Simply check if your array, object, string, number, etc are empty or not.",
+  "repository": "https://github.com/mirashif/khali",
   "author": "Mir Ashif, Samiul Haque Sohan",
   "license": "GPL-2.0-only",
   "prepublish": "tsc",
