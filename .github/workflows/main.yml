@@ -1,0 +1,11 @@
+name: Khali Package
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  build:
+
+  publish-npm:
+    needs: build
