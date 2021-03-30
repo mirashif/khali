@@ -1,9 +1,8 @@
-const khali = (data: any): boolean => {
-    if (Array.isArray(data)) return !data.length;
+const isKhali = (data: any): boolean => {
+  if (Array.isArray(data)) return !data.length;
+  else if (typeof data === "object" && data !== null)
+    return !Object.keys(data).length;
+  else return !data;
+};
 
-    else if (typeof data === 'object' && data !== null) return !Object.keys(data).length;
-    
-    else return !data
-}
-
-export default khali;
+export default isKhali;
