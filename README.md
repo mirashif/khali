@@ -40,5 +40,5 @@ isKhali(obj.city);  // false
 
 # API
 ## isKhali(value)
-- returns boolean
+- Returns `boolean`
 - Returns `true` if the `value` is empty else `false`.
