@@ -1,4 +1,13 @@
 # Khali (Khāli; meaning, Empty)
+[![npm version](https://img.shields.io/npm/v/khali.svg?label=version)](https://www.npmjs.org/package/khali)
+[![install size](https://packagephobia.now.sh/badge?p=khali)](https://packagephobia.now.sh/result?p=khali)
+[![npm downloads](https://img.shields.io/npm/dm/khali.svg)](http://npm-stat.com/charts.html?package=khali)
+[![GitHub issues](https://img.shields.io/github/issues/zanvent/khali)](https://github.com/zanvent/khali/issues)
+[![GitHub forks](https://img.shields.io/github/forks/zanvent/khali)](https://github.com/zanvent/khali/network)
+[![GitHub stars](https://img.shields.io/github/stars/zanvent/khali)](https://github.com/zanvent/khali/stargazers)
+[![GitHub license](https://img.shields.io/github/license/zanvent/khali)](https://github.com/zanvent/khali/blob/master/LICENSE)
+[![Twitter](https://img.shields.io/twitter/url?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fzanvent%2Fkhali)
+
 Simply check if your array, object, nested stuff, string, number, etc are empty or not.
 
 
