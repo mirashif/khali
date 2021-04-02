@@ -19,21 +19,27 @@ isKhali({});    // true
 isKhali("");    // true
 isKhali(0);     // true
 
-const arr = ["Dhaka", "Rajshahi", [1, 2, 3]];
-const obj = { city: "Dhaka", nested: { khali: null } };
+const arr = ["Dhaka", ["Uttara", [1, 2]]];
+const obj = {
+        city: "Dhaka",
+        location: {
+          latitude: "23.809473999508782",
+          longitude: "90.4151957081839",
+        },
+      };
 
 // It works with array or, object
-isKhali(arr[1000]);             // true
-isKhali(obj["doesNotExist"]);   // true
+isKhali(arr[10]);           // true
+isKhali(obj["capital"]);    // true
 
 isKhali(arr); // false
 isKhali(obj); // false
 
 // And of course it works with nested values
-isKhali(arr[2][1000]);              // true
-isKhali(obj["nested"]["khali"]);    // true
+isKhali(arr[0][100]);               // true
+isKhali(obj["location"]["area"]);   // true
 
-isKhali(arr[2][0]); // false
+isKhali(arr[0][0]); // false
 isKhali(obj.city);  // false
 ```
 
