@@ -1,6 +1,6 @@
 {
   "name": "khali",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Simply check if your array, object, nested stuff, string, number, etc are empty or not.",
   "repository": "https://github.com/zanvent/khali",
   "author": "Mir Ashif, Samiul Haque Sohan",
