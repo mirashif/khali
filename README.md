@@ -6,7 +6,7 @@
 [![GitHub forks](https://img.shields.io/github/forks/zanvent/khali)](https://github.com/zanvent/khali/network)
 [![GitHub stars](https://img.shields.io/github/stars/zanvent/khali)](https://github.com/zanvent/khali/stargazers)
 [![GitHub license](https://img.shields.io/github/license/zanvent/khali)](https://github.com/zanvent/khali/blob/master/LICENSE)
-[![Twitter](https://img.shields.io/twitter/url?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fzanvent%2Fkhali)
+[![Twitter](https://img.shields.io/twitter/url?label=Share&style=social&url=https%3A%2F%2Fgithub.com%2Fzanvent%2Fkhali)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fzanvent%2Fkhali)
 
 Simply check if your array, object, nested stuff, string, number, etc are empty or not.
 
