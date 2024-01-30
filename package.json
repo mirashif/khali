@@ -1,15 +1,19 @@
 {
   "name": "khali",
-  "version": "1.2.1",
+  "version": "2.0.0",
   "description": "Simply check if your array, object, nested stuff, string, number, etc are empty or not.",
-  "repository": "https://github.com/zanvent/khali",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mirashif/khali.git"
+  },
   "author": "Mir Ashif, Samiul Haque Sohan",
   "license": "GPL-2.0-only",
-  "prepublish": "yarn build",
+  "prepublish": "bun run build",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "keywords": [
     "empty",
+    "is-empty",
     "check",
     "variable",
     "array",
@@ -18,16 +22,13 @@
     "number"
   ],
   "scripts": {
-    "build": "tsc ./src/",
-    "test": "jest"
+    "build": "bun build ./src --outdir ./dist",
+    "lint": "bunx @biomejs/biome check --apply ./src",
+    "test": "bun test"
   },
   "devDependencies": {
-    "@types/jest": "^26.0.22",
-    "eslint": "^7.23.0",
-    "jest": "^26.6.3",
-    "prettier": "^2.2.1",
-    "prettier-eslint": "^12.0.0",
-    "ts-jest": "^26.5.4",
-    "typescript": "^4.2.3"
+    "@biomejs/biome": "^1.5.3",
+    "bun": "^1.0.25",
+    "bun-types": "^1.0.25"
   }
 }

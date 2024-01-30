@@ -1,8 +1,8 @@
-const isKhali = (data: any): boolean => {
-  if (Array.isArray(data)) return !data.length;
-  else if (typeof data === "object" && data !== null)
-    return !Object.keys(data).length;
-  else return !data;
-};
+export default function isEmpty(data: unknown): boolean {
+	if (Array.isArray(data)) return !data.length;
 
-export default isKhali;
+	if (typeof data === "object" && data !== null)
+		return !Object.keys(data).length;
+
+	return !data;
+}

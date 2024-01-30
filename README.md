@@ -1,4 +1,5 @@
 # Khali (Khāli; meaning, Empty)
+
 [![npm version](https://img.shields.io/npm/v/khali.svg?label=version)](https://www.npmjs.org/package/khali)
 [![install size](https://packagephobia.now.sh/badge?p=khali)](https://packagephobia.now.sh/result?p=khali)
 [![npm downloads](https://img.shields.io/npm/dm/khali.svg)](http://npm-stat.com/charts.html?package=khali)
@@ -10,23 +11,27 @@
 
 Simply check if your array, object, nested stuff, string, number, etc are empty or not.
 
+## Installation
 
-# Installation
 - with npm  
 `npm install khali`
 - with yarn  
 `yarn add khali`
+- with pnpm  
+`pnpm install khali`
+- with bun  
+`bun add khali`
 
+## Usage examples
 
-# Usage examples
 ```js
-import isKhali from "khali";
+import isEmpty from "khali";
 
 // Regular stuff
-isKhali([]);    // true
-isKhali({});    // true
-isKhali("");    // true
-isKhali(0);     // true
+isEmpty([]);    // true
+isEmpty({});    // true
+isEmpty("");    // true
+isEmpty(0);     // true
 
 const arr = ["Dhaka", ["Uttara", [1, 2]]];
 const obj = {
@@ -38,22 +43,23 @@ const obj = {
       };
 
 // It works with array or, object
-isKhali(arr[10]);           // true
-isKhali(obj["capital"]);    // true
+isEmpty(arr[10]);           // true
+isEmpty(obj["capital"]);    // true
 
-isKhali(arr); // false
-isKhali(obj); // false
+isEmpty(arr); // false
+isEmpty(obj); // false
 
 // And of course it works with nested values
-isKhali(arr[0][100]);               // true
-isKhali(obj["location"]["area"]);   // true
+isEmpty(arr[0][100]);               // true
+isEmpty(obj["location"]["area"]);   // true
 
-isKhali(arr[0][0]); // false
-isKhali(obj.city);  // false
+isEmpty(arr[0][0]); // false
+isEmpty(obj.city);  // false
 ```
 
+## API
 
-# API
-## isKhali(value)
+### isEmpty(value)
+
 - Returns `boolean`
 - Returns `true` if the `value` is empty else `false`.
