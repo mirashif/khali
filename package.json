@@ -1,6 +1,6 @@
 {
   "name": "khali",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Simply check if your array, object, nested stuff, string, number, etc are empty or not.",
   "repository": {
     "type": "git",
@@ -19,15 +19,17 @@
     "string",
     "number"
   ],
-  "main": "dist/src/index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "build": "bun build ./src --outdir ./dist",
-    "lint": "bunx @biomejs/biome check --apply ./src",
-    "test": "bun test"
+    "build": "tsc",
+    "lint": "npx @biomejs/biome check --apply ./src",
+    "test": "vitest --dir ./tests"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.5.3",
-    "bun": "^1.0.25",
-    "bun-types": "^1.0.25"
-  }
+    "typescript": "^5.4.5",
+    "vitest": "^1.6.0"
+  },
+  "packageManager": "npm@10.5.0"
 }

@@ -6,8 +6,8 @@
     "declaration": true,
     "outDir": "dist",
     "strict": true,
-    "esModuleInterop": true,
-    "types": ["bun-types"]
+    "esModuleInterop": true
   },
-  "exclude": ["node_modules", "dist"]
+  "exclude": ["node_modules", "dist"],
+  "include": ["src"]
 }
