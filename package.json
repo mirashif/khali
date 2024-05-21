@@ -1,6 +1,6 @@
 {
   "name": "khali",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "Simply check if your array, object, nested stuff, string, number, etc are empty or not.",
   "repository": {
     "type": "git",
@@ -9,8 +9,6 @@
   "author": "Mir Ashif, Samiul Haque Sohan",
   "license": "GPL-2.0-only",
   "prepublish": "bun run build",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
   "keywords": [
     "empty",
     "is-empty",
@@ -21,6 +19,7 @@
     "string",
     "number"
   ],
+  "main": "dist/src/index.js",
   "scripts": {
     "build": "bun build ./src --outdir ./dist",
     "lint": "bunx @biomejs/biome check --apply ./src",
